@@ -36,8 +36,10 @@ class SuggetsController{
 
     public function set_query ($size, $field) {
         $field = strtolower($field);
-        if ($field = "handelsnaam" || $field == "dossiernummer") {
-            $this->query_string = sprintf("&size=%d&fields[]=%s", $size, $field);
+        if ($field == "handelsnaam" || $field == "dossiernummer") {
+            $this->query_string = "&size=".$size."&fields[]=" . $field;
+            echo $this->query_string;
+            //$this->query_string = sprintf("&size=%d&fields[]=%s", $size, $field);
         }
         else {
             $this->failsafe = false;

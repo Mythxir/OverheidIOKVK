@@ -1,4 +1,5 @@
 <?php
+include "../src/QueryController.php";
 
 class QueryControllerTest extends PHPUnit_Framework_TestCase{
 
