@@ -2,7 +2,6 @@
     "name": "n-minten/overheid-api-template",
     "description": "Boilerplate package for creating other packages.",
     "keywords": ["template", "composer", "package"],
-    "license": "DBAD",
     "authors": [
         {
             "name": "Darwin Biler",
